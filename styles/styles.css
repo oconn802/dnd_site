@@ -1,0 +1,17 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+h1{
+    text-decoration: underline;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+#campaigns ul{
+    font-style: italic;
+}
