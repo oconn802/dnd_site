@@ -7,68 +7,115 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <style>
         img {
-            width: 100px;
-            height: auto;
+            width: auto;
+            height: 100px;
             display: block;
-            margin: auto;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
         }
         section {
             display: flex;
+            flex-direction: column;
+            flex: auto;
         }
-        div {
-            background-color: lavender;
+        h3 {
+            text-align: left;
+        }
+        .pc {
+            background-color: rgb(202, 202, 95);
+            border: 2px solid;
+            border-color: black;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+            flex: 1 1 auto;
+        }
+        .title-card {
+            background-color: white;
+            padding: 10px;
             border: 1px solid;
             border-color: black;
-            padding: 5px;
-            margin: 3px;
-            position: relative;
+            margin: 10px;
+            width: 120px;
+            text-align: center;
+            align-items: center;
+            border-radius: 10px;
+            flex-shrink: 0;
         }
-        p, a {
-            background-color: lavender;
+        .character-sheet {
+            width: 250px;
+            flex-shrink: 0;
+            padding: 0 10px;
         }
-        a {
-            position: absolute;
-            top: 160px;
+        .bio {
+            font-style: italic;
+            padding: 0 10px;
         }
-        p {
-            position: absolute;
-            top: 200px;
+        p, a, strong {
+            background-color: inherit;
         }
     </style>
 </head>
 <body>
     <h1>Player Character Dashboard</h1>
-    <section>
+    <section id="dinavar">
+        <h2>Dinavar</h2>
         <div class="pc" id="Atar-Kesh">
-            <img src="./images/Atar-Kesh.jpg" alt=""><br>
-            <a href="./PC-Atar-Kesh.html">Atar Kesh</a>
-            <p>Race: Human<br>Class: Fighter (Battlemaster)<br>Level: 5</p><br>
+            <div class="title-card">
+                <img src="./images/Atar-Kesh.jpg" alt=""><br>
+                <a href="./PC-Atar-Kesh.html">Atar Kesh</a>
+            </div>
+            <p class="character-sheet"><strong>Race: </strong>Human<br><strong>Class: </strong>Fighter (Battlemaster)<br><strong>Level: </strong>5</p><br>
+            <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequatur a dolore? Vero illo veritatis culpa similique eaque fuga esse dicta ratione laborum illum quaerat sed dolorum, distinctio nobis eius! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias exercitationem, totam dolore et ullam qui sint officiis maiores quisquam! Nesciunt, numquam ducimus. Quia nemo blanditiis pariatur molestiae nisi quos accusantium.</p>
         </div>
         <div class="pc" id="Beck-Aravani">
-            <img src="./images/Beck-Aravani.png" alt=""><br>
-            <a href="./PC-Beck-Aravani.html">Beck Aravani</a>
-            <p>Race: Minotaur<br>Class: Fighter (Battlemaster)<br>Level: 5</p><br>
+            <div class="title-card">
+                <img src="./images/Beck-Aravani.png" alt=""><br>
+                <a href="./PC-Beck-Aravani.html">Beck Aravani</a>
+            </div>
+            <p class="character-sheet"><strong>Race: </strong>Minotaur<br><strong>Class: </strong>Fighter (Battlemaster)<br><strong>Level: </strong>5</p><br>
+            <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequatur a dolore? Vero illo veritatis culpa similique eaque fuga esse dicta ratione laborum illum quaerat sed dolorum, distinctio nobis eius! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias exercitationem, totam dolore et ullam qui sint officiis maiores quisquam! Nesciunt, numquam ducimus. Quia nemo blanditiis pariatur molestiae nisi quos accusantium.</p>
         </div>
         <div class="pc" id="Breena-Finn">
-            <img src="./images/Breena-Finn.png" alt=""><br>
-            <a href="./PC-Breena-Finn.html">Breena Finn</a>
-            <p>Race: Half-Elf<br>Class: Sorcerer (Storm)<br>Level: 5</p><br>
+            <div class="title-card">
+                <img src="./images/Breena-Finn.png" alt=""><br>
+                <a href="./PC-Breena-Finn.html">Breena Finn</a>
+            </div>
+            <p class="character-sheet"><strong>Race: </strong>Half-Elf<br><strong>Class: </strong>Sorcerer (Storm)<br><strong>Level: </strong>5</p><br>
+            <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequatur a dolore? Vero illo veritatis culpa similique eaque fuga esse dicta ratione laborum illum quaerat sed dolorum, distinctio nobis eius! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias exercitationem, totam dolore et ullam qui sint officiis maiores quisquam! Nesciunt, numquam ducimus. Quia nemo blanditiis pariatur molestiae nisi quos accusantium.</p>
         </div>
         <div class="pc" id="Eustace-Aster">
-            <img src="./images/Eustace-Aster.png" alt=""><br>
-            <a href="./PC-Eustace-Aster.html">Breena Finn</a>
-            <p>Race: Half-Elf<br>Class: Sorcerer (Storm)<br>Level: 5</p><br>
+            <div class="title-card">
+                <img src="./images/Eustace-Aster.png" alt=""><br>
+                <a href="./PC-Eustace-Aster.html">Eustace Aster</a>
+            </div>
+            <p class="character-sheet"><strong>Race: </strong>Human<br><strong>Class: </strong>Fighter (Battlemaster)<br><strong>Level: </strong>5</p><br>
+            <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequatur a dolore? Vero illo veritatis culpa similique eaque fuga esse dicta ratione laborum illum quaerat sed dolorum, distinctio nobis eius! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias exercitationem, totam dolore et ullam qui sint officiis maiores quisquam! Nesciunt, numquam ducimus. Quia nemo blanditiis pariatur molestiae nisi quos accusantium.</p>
         </div>
         <div class="pc" id="Flint-Cartwright">
-            <img src="./images/Flint-Cartwright.jpg" alt=""><br>
-            <a href="./PC-Flint-Cartwright.html">Breena Finn</a>
-            <p>Race: Half-Elf<br>Class: Sorcerer (Storm)<br>Level: 5</p><br>
+            <div class="title-card">
+                <img src="./images/Flint-Cartwright.jpg" alt=""><br>
+                <a href="./PC-Flint-Cartwright.html">Flint Cartwright</a>
+            </div>
+            <p class="character-sheet"><strong>Race: </strong>Human<br><strong>Class: </strong>Fighter (Battlemaster)<br><strong>Level: </strong>5</p><br>
+            <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequatur a dolore? Vero illo veritatis culpa similique eaque fuga esse dicta ratione laborum illum quaerat sed dolorum, distinctio nobis eius! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias exercitationem, totam dolore et ullam qui sint officiis maiores quisquam! Nesciunt, numquam ducimus. Quia nemo blanditiis pariatur molestiae nisi quos accusantium.</p>
         </div>
         <div class="pc" id="Maibe-al-Riah">
-            <img src="./images/Maibe-al-Riah.png" alt=""><br>
-            <a href="./PC-Maibe-al-Riah.html">Breena Finn</a>
-            <p>Race: Half-Elf<br>Class: Sorcerer (Storm)<br>Level: 5</p><br>
+            <div class="title-card">
+                <img src="./images/Maibe-al-Riah.png" alt=""><br>
+                <a href="./PC-Maibe-al-Riah.html">Maibe al-Riah</a>
+            </div>
+            <p class="character-sheet"><strong>Race: </strong>Human<br><strong>Class: </strong>Fighter (Battlemaster)<br><strong>Level: </strong>5</p><br>
+            <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequatur a dolore? Vero illo veritatis culpa similique eaque fuga esse dicta ratione laborum illum quaerat sed dolorum, distinctio nobis eius! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias exercitationem, totam dolore et ullam qui sint officiis maiores quisquam! Nesciunt, numquam ducimus. Quia nemo blanditiis pariatur molestiae nisi quos accusantium.</p>
         </div>
+    </section>
+    <section id="halverden">
+        <h2>Halverden</h2>
+    </section>
+    <section id="corvus">
+        <h2>Corvus</h2>
     </section>
 </body>
 </html>
