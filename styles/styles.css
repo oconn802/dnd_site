@@ -1,17 +1,39 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(156, 156, 61);
 }
 
-h1{
+h1 {
     text-decoration: underline;
     text-align: center;
 }
 
-h3{
+h3 {
     text-align: center;
 }
 
-#campaigns ul{
+#campaigns ul {
     font-style: italic;
+}
+
+.navigation-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 5px;
+    background-color: rgb(128, 128, 37);
+}
+
+.navigation-bar a {
+    background-color: inherit;
+}
+
+.navigation-bar a button {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(180, 180, 40);
 }
